@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Bem Vindos a Calculadora Simples</h1>
+    </header>
+    <main>
+        <div class="calculadora">
+            <div class="visor">
+                <div id="accumulator" class="acc"></div>
+                <div id="total" class="total" hidden></div>
+            </div>
+            <div class="numeric action" onclick="ClearAll()">C</div>
+            <div class="numeric action" onclick="CleanCurrentEntry()">CE</div>
+
+            <div class="numeric action" onclick="Percentage()">%</div>
+
+            <div class="numeric action" onclick="CalcAction('/')">/</div>
+
+            <div class="numeric" onclick="AddNumber(7)">7</div>
+            <div class="numeric" onclick="AddNumber(8)">8</div>
+            <div class="numeric" onclick="AddNumber(9)">9</div>
+
+            <div class="numeric action" onclick="CalcAction('x')">x</div>
+
+            <div class="numeric" onclick="AddNumber(4)">4</div>
+            <div class="numeric" onclick="AddNumber(5)">5</div>
+            <div class="numeric" onclick="AddNumber(6)">6</div>
+
+            <div class="numeric action" onclick="CalcAction('-')">-</div>
+
+            <div class="numeric" onclick="AddNumber(1)">1</div>
+            <div class="numeric" onclick="AddNumber(2)">2</div>
+            <div class="numeric" onclick="AddNumber(3)">3</div>
+
+            <div class="numeric action" onclick="CalcAction('+')">+</div>
+            
+            <div class="numeric zero" onclick="AddNumber(0)">0</div>
+
+            <div class="numeric" onclick="AddComma()">,</div>
+
+            <div class="numeric action result" onclick="Result()">=</div>
+        </div>
+    </main>
+    <script src="acoes.js"></script>
+</body>
+</html>
